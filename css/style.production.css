@@ -6,16 +6,14 @@
 */
 
 body {
-  background-color:white;
-  font-family: 'Open Sans', sans-serif ;
+  background-color: #fff;
+  font-family: 'oswald', sans-serif ;
   font-weight: 400;
-  font-size: 22px;
-  color:rgb(0, 0, 0);
+  font-size: 16px;
+  color:rgb(0,0,0);
   /* sets the font size to 16px */
   line-height: 1.6;
   /* sets the line height to 1.6 */
-  position:relative;
-  min-height: 100vh;
 }
 
 /* color palette #4bb1b4 and #b84c47 */
@@ -26,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 46px;
+  font-size: 28px;
   font-weight:700;
 }
 
@@ -36,12 +34,12 @@ h3 {
 }
 
 a {
-  color: #636363;
+  color: #489c79;
 }
 
 a:visited {
   /*visited link*/
-  color: #636363;
+  color: #357b70;
 }
 
 a:hover, a:focus {
@@ -51,7 +49,7 @@ a:hover, a:focus {
 
 a:active {
   /* selected link */
-  color: #000000;
+  color: #489c79;
 }
 
 button {
@@ -90,9 +88,6 @@ button:hover, button:focus {
 
 .page-footer {
   clear: both;
-  position:sticky;
-  top: 100%;
-  
 }
 
 .profile {
@@ -116,8 +111,6 @@ button:hover, button:focus {
       -ms-flex-direction: column;
           flex-direction: column; /* without adding direction the social media links line up horizontally right next to the text "find me on", changing to column the flow of the flex items would change top-to-bottom rather than left-to-right*/
   text-align: center;
-  border-top: 2px solid rgb(112, 112, 112);
-  background-color:rgb(255, 255, 255);
 }
 
 .profile__text {
@@ -132,8 +125,7 @@ button:hover, button:focus {
   display: flex;
   width: 100%;
   padding: 10px;
-  border-bottom: 2px solid rgb(112, 112, 112);
-  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(218, 218, 218);
 
 }
 
@@ -156,7 +148,7 @@ button:hover, button:focus {
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 
@@ -282,7 +274,6 @@ button {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-  padding: 100px;
 }
 
 .image-wrapper {
@@ -345,7 +336,6 @@ button {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-  padding: 100px;
 
 }
 
@@ -355,5 +345,4 @@ button {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-  padding: 100px;
 }
