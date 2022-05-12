@@ -4,29 +4,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Contact</title>
-    <link rel="shortcut icon" href="assets/images/jmf2.png" />
+    <link rel="shortcut icon" href="assets/images/joeblkfav.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
-    />
-
-    <link
+    /> 
+      <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <script src="https://kit.fontawesome.com/0e8e1e309b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="page-header">
       <!--add logo here-->
       <img
-        src="assets/images/Joe-Megyery1.png"
+        src="assets/images/jmwhitelogo.png"
         height="80"
-        width="100"
+        width="80"
         alt="logo"
         class="page-header__item"
       />
@@ -36,7 +36,7 @@
             <a
               href="index.html"
               role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
+              class="navigation-list__item navigation-list__item"
               >Home</a
             >
           </li>
@@ -62,36 +62,56 @@
         </ul>
       </nav>
     </header>
+    
     <div class="contact-content-container">
-      Joe Megyery<br />
-      Chicago, IL<br />
-      United States<br />
-      <br />
-      <div>
-        <a href="tel:8477229205">Call me</a><br />
-        <a href="mailto:joemegz@me.com">joemegz@me.com</a><br />
-        <a href="mailto:joemegz@me.com">Contact</a><br />
-        <!--call to action link-->
+
+      <div class="img-wrapper">
+        <img src="assets/images/city-background.jpg" />
       </div>
-      <form action="method=post" id="contact-form">
-        <!--id for action lets you click on email and it direct you to the line to fill out your email-->
-        <label class="standard-label" for="contact-email">E-mail:</label>
-        <!--for (class) lets your action know which id is being used-->
-        <input type="email" id="contact-email" required />
+      <div class="content-inner">  
+        <h1>Joe Megyery</h1>
 
-        <label class="standard-label" for="contact-tel">Telephone: </label>
-        <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+          <form action="method=post" id="contact-form">
+            <div class="row">
+              <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name"> <i class="fa-solid fa-user"></i> Your Name</label>
+              </div>
+              <div class="input-group">
+                <input type="tel" id="contact-tel" required>
+                <label for="contact-tel"> <i class="fa-solid fa-phone"></i> Phone</label>
+              </div>
+            </div>
+              
+            
+              <div class="input-group">
+                <!--id for action lets you click on email and it direct you to the line to fill out your email-->
+                <input type="text" id="contact-email" required />
+                <label for="contact-email"> <i class="fa-solid fa-envelope"></i> Email</label>
+                <!--for (class) lets your action know which id is being used-->
+              </div>
+              
+              <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message-box"> <i class="fa-solid fa-message"> </i> Message </label>
+              </div>
+                <button id="submit-button" type="submit">Submit</button> 
 
-        <label class="standard-label" for="message-box">Message: </label>
-        <textarea id="message-box" maxlength="240" required></textarea>
-        <input type="submit" value="Send message" />
-      </form>
+          </form>
+            <div class="contact-links-container">
+              <a href="tel:8477229205">Call me</a><br />
+              <a href="mailto:joemegz@me.com">joemegz@me.com</a><br />
+              <a href="mailto:joemegz@me.com">Contact</a><br />
+              <!--call to action link-->
+            </div>
+        </div>
+      </div>
     </div>
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
         <a target="_blank" href="http://github.com/Joemegz"
-          ><img src="assets/images/github-icon.svg" alt="Github"
+          ><img src="assets/images/git-hub-icon-svg.svg" alt="Github"
         /></a>
         <a target="_blank" href="http://facebook.com/supermanthat"
           ><img src="assets/images/facebook-icon.svg" alt="Facebook"
